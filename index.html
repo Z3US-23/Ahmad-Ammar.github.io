@@ -447,23 +447,16 @@
         <div class="proj-roles"><span>Data Pipeline</span><span>NLP</span><span>Dashboard</span></div>
       </div>
       <p class="proj-desc">What are crypto news and Reddit saying about <strong>Bitcoin, Ethereum and Solana</strong>, and does the mood line up with the price? I built an automated pipeline that collects headlines and posts from 11 free sources, scores their sentiment, and lines it up against market prices in an interactive dashboard.</p>
-      <div class="proj-shots">
-        <a class="proj-shot" href="https://crypto-sentiment-dashboard-5vcjnk8vieydnlappdhzayy.streamlit.app/" target="_blank" rel="noopener">
-          <img src="img/crypto-dashboard.png" alt="Screenshot of version 1 of the Crypto Sentiment Dashboard: sentiment and price charts for Bitcoin" loading="lazy">
-          <span class="shot-cap"><b>v1 · Original</b><span>Live dashboard ↗</span></span>
-        </a>
-        <a class="proj-shot" href="https://crypto-dashboard-v2-2nnqcnwrymsvysim2kh8oq.streamlit.app/" target="_blank" rel="noopener">
-          <img src="img/crypto-dashboard-v2.jpg" alt="Screenshot of the v2 redesign: daily Bitcoin candlestick chart with sentiment bars underneath and a market-mood panel" loading="lazy">
-          <span class="shot-cap"><b>v2 · Redesign</b><span>Live dashboard ↗</span></span>
-        </a>
-      </div>
+      <a class="proj-shot" href="https://crypto-dashboard-v2-2nnqcnwrymsvysim2kh8oq.streamlit.app/" target="_blank" rel="noopener">
+        <img src="img/crypto-dashboard-v2.jpg" alt="Screenshot of the Crypto Sentiment Dashboard: daily Bitcoin candlestick chart with sentiment bars underneath and a market-mood panel" loading="lazy">
+      </a>
       <ul class="proj-points">
         <li>Collects from <strong>11 sources with no API keys</strong>: CoinDesk, Cointelegraph, Decrypt and Google News feeds, four subreddits, and Yahoo Finance prices.</li>
         <li>Runs <strong>every 6 hours on GitHub Actions</strong>, committing new data back to the repository, so the dataset grows on its own.</li>
         <li>Scores sentiment with <strong>VADER NLP extended with a custom crypto lexicon</strong> (<em>bullish</em>, <em>rekt</em>, <em>FUD</em>, <em>liquidated</em>), and de-duplicates stories syndicated across outlets.</li>
         <li>Handles real-world failure: reads Reddit's <strong>rate-limit headers and waits</strong>, and keeps running when a single source is down.</li>
         <li>Keeps the statistics honest: <strong>low-sample days are faded or excluded</strong>, and the sentiment-vs-next-day-return correlation only appears once there is enough data.</li>
-        <li>A <strong>v2 redesign</strong> adds daily <strong>candlestick charts with each day's mood underneath</strong>, a sentiment gauge and per-coin sparkline cards, themed with custom CSS on top of Streamlit. Both versions are live.</li>
+        <li>Presents it as a trading-terminal-style dashboard: daily <strong>candlestick charts with each day's mood underneath</strong>, a sentiment gauge and per-coin sparkline cards, themed with custom CSS on top of Streamlit.</li>
       </ul>
       <div class="stat-strip">
         <div class="stat"><div class="stat-value">11</div><div class="stat-label">data sources, zero API keys</div></div>
@@ -475,10 +468,8 @@
         <span>Python</span><span>pandas</span><span>VADER NLP</span><span>Streamlit</span><span>Plotly</span><span>CSS</span><span>GitHub Actions</span><span>RSS</span><span>yfinance</span>
       </div>
       <div class="contact-links proj-links">
-        <a class="primary" href="https://crypto-dashboard-v2-2nnqcnwrymsvysim2kh8oq.streamlit.app/" target="_blank" rel="noopener">Open v2 dashboard ↗</a>
-        <a href="https://crypto-sentiment-dashboard-5vcjnk8vieydnlappdhzayy.streamlit.app/" target="_blank" rel="noopener">v1 dashboard ↗</a>
-        <a href="https://github.com/Z3US-23/crypto-dashboard-v2" target="_blank" rel="noopener">v2 code ↗</a>
-        <a href="https://github.com/Z3US-23/crypto-dashboard" target="_blank" rel="noopener">v1 code ↗</a>
+        <a class="primary" href="https://crypto-dashboard-v2-2nnqcnwrymsvysim2kh8oq.streamlit.app/" target="_blank" rel="noopener">Open live dashboard ↗</a>
+        <a href="https://github.com/Z3US-23/crypto-dashboard-v2" target="_blank" rel="noopener">Code on GitHub ↗</a>
       </div>
     </article>
   </div>
