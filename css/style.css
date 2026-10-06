@@ -216,6 +216,7 @@ section.chapter.alt { background: var(--bg-alt); }
 .quad-svg a:nth-of-type(3) .quad-dot { transition-delay: 0.31s; }
 .quad-svg a:nth-of-type(4) .quad-dot { transition-delay: 0.44s; }
 .quad-svg a:nth-of-type(5) .quad-dot { transition-delay: 0.57s; }
+.quad-svg a:nth-of-type(6) .quad-dot { transition-delay: 0.70s; }
 @keyframes haloPulse { 0%, 100% { transform: scale(1); opacity: 0.55; } 50% { transform: scale(1.14); opacity: 0.3; } }
 .quad-dot .halo { transform-origin: center; transform-box: fill-box; animation: haloPulse 3.4s ease-in-out infinite; }
 .quad-dot .core { transform-origin: center; transform-box: fill-box; transition: transform 0.25s; }
