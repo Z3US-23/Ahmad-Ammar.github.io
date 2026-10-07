@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ahmad Ammar — Data Analyst</title>
-  <meta name="description" content="Ahmad Ammar — data analyst in Lahore working in SQL, R, Python, econometrics and automated data pipelines. Client audits, panel-data research, a global salary analysis, in-browser SQL analytics and a live sentiment dashboard, with the real numbers.">
+  <meta name="description" content="Ahmad Ammar — data analyst in Lahore working in SQL, R, Python, econometrics and automated data pipelines. Client audits, panel-data research, a global salary analysis, in-browser SQL analytics, a live sentiment dashboard and a clinic records app, with the real numbers.">
   <meta property="og:title" content="Ahmad Ammar — Data Analyst">
   <meta property="og:description" content="SQL, R, Python, econometrics and automated data pipelines. Client audits, panel-data research, in-browser SQL analytics and a live sentiment dashboard, with the real numbers.">
   <meta property="og:type" content="website">
@@ -109,7 +109,7 @@
       <a class="toc-item" href="#map"><span class="toc-num">00</span><span class="toc-text">The Map &amp; The Numbers<small>Where the work sits, and what it measured</small></span></a>
       <a class="toc-item" href="#client"><span class="toc-num">01</span><span class="toc-text">Client Work<small>Website performance &amp; SEO audit — iAC Studio</small></span></a>
       <a class="toc-item" href="#research"><span class="toc-num">02</span><span class="toc-text">Research<small>ICT &amp; development in 50 countries · global data salaries in R</small></span></a>
-      <a class="toc-item" href="#products"><span class="toc-num">03</span><span class="toc-text">Data Products<small>In-browser SQL analytics &amp; a self-updating sentiment dashboard</small></span></a>
+      <a class="toc-item" href="#products"><span class="toc-num">03</span><span class="toc-text">Data Products<small>In-browser SQL analytics, a self-updating sentiment dashboard &amp; a clinic records app</small></span></a>
       <a class="toc-item" href="#toolkit"><span class="toc-num">04</span><span class="toc-text">Toolkit &amp; Education<small>Languages, methods, and where I studied them</small></span></a>
       <a class="toc-item" href="#contact"><span class="toc-num">05</span><span class="toc-text">Work With Me<small>Contact &amp; availability</small></span></a>
     </div>
@@ -121,10 +121,10 @@
   <div class="container">
     <div class="chapter-num">Chapter 00 — Orientation</div>
     <h2 class="chapter-title">The map &amp; <em>the numbers.</em></h2>
-    <p class="chapter-deck">Seven areas of work, plotted by what they're made of and who they were for. Every dot is clickable — and every number below comes straight from the work itself.</p>
+    <p class="chapter-deck">Eight areas of work, plotted by what they're made of and who they were for. Every dot is clickable — and every number below comes straight from the work itself.</p>
 
     <div class="quad-wrap reveal">
-      <svg class="quad-svg" viewBox="0 0 900 600" role="img" aria-label="Positioning map of seven work areas">
+      <svg class="quad-svg" viewBox="0 0 900 600" role="img" aria-label="Positioning map of eight work areas">
         <g>
           <line class="gridline" x1="150" y1="120" x2="150" y2="500"/>
           <line class="gridline" x1="250" y1="120" x2="250" y2="500"/>
@@ -193,6 +193,14 @@
           <text class="dot-caption" x="735" y="218" text-anchor="middle">1M rows · cohorts · RFM</text>
         </g></a>
 
+        <!-- Clinic records app -->
+        <a href="#clinic-records"><g class="quad-dot">
+          <circle class="halo" cx="128" cy="150" r="30" fill="#8cc66d" opacity="0.14"/>
+          <circle class="core" cx="128" cy="150" r="11" fill="#8cc66d"/>
+          <text class="dot-title" x="128" y="206" text-anchor="middle">Clinic App</text>
+          <text class="dot-caption" x="128" y="225" text-anchor="middle">Django · WhatsApp</text>
+        </g></a>
+
         <!-- Salary analysis in R -->
         <a href="#salary-r"><g class="quad-dot">
           <circle class="halo" cx="380" cy="450" r="34" fill="#e07a5f" opacity="0.14"/>
@@ -208,6 +216,7 @@
         <a href="#salary-r"><span class="legend-dot" style="background:#e07a5f"></span>EDA in R — clean, check, summarise</a>
         <a href="#retail-sql"><span class="legend-dot" style="background:#5598e7"></span>SQL analytics — runs in the browser</a>
         <a href="#crypto-dashboard"><span class="legend-dot" style="background:#d9a441"></span>Data product — live, self-updating</a>
+        <a href="#clinic-records"><span class="legend-dot" style="background:#8cc66d"></span>Product — patient records &amp; follow-ups</a>
         <a href="#education"><span class="legend-dot" style="background:#6f757b"></span>Education — the foundations</a>
       </div>
     </div>
@@ -287,6 +296,21 @@
         <div class="n">1.8<em>×</em></div>
         <div class="l">the average pay at medium-sized companies compared with small ones — $143k against $78k</div>
         <div class="src">Salary Analysis</div>
+      </div>
+      <div class="bignum reveal">
+        <div class="n">893</div>
+        <div class="l">automated tests, including checks that one clinic can never open another clinic's patient records</div>
+        <div class="src">Clinic Records</div>
+      </div>
+      <div class="bignum reveal">
+        <div class="n">3</div>
+        <div class="l">kinds of WhatsApp reminder prepared automatically — appointments, follow-ups and missed check-ups</div>
+        <div class="src">Clinic Records</div>
+      </div>
+      <div class="bignum reveal">
+        <div class="n">0</div>
+        <div class="l">per-message fees: reminders open WhatsApp with the message already typed, so no paid messaging API</div>
+        <div class="src">Clinic Records</div>
       </div>
     </div>
   </div>
@@ -400,7 +424,7 @@
   <div class="container">
     <div class="chapter-num">Chapter 03 — Data Products</div>
     <h2 class="chapter-title">Tools you can <em>open and use.</em></h2>
-    <p class="chapter-deck">Not one-off notebooks: two live dashboards. One runs a full SQL database inside your browser; the other is fed by a pipeline that collects, scores and publishes new data every six hours on its own.</p>
+    <p class="chapter-deck">Not one-off notebooks: two live dashboards and a working app. One runs a full SQL database inside your browser, one is fed by a pipeline that refreshes itself every six hours, and one keeps a clinic's patient history and WhatsApp follow-ups in one place.</p>
 
     <article class="project" id="retail-sql">
       <div class="proj-head">
@@ -470,6 +494,40 @@
       <div class="contact-links proj-links">
         <a class="primary" href="https://crypto-dashboard-v2-2nnqcnwrymsvysim2kh8oq.streamlit.app/" target="_blank" rel="noopener">Open live dashboard ↗</a>
         <a href="https://github.com/Z3US-23/crypto-dashboard-v2" target="_blank" rel="noopener">Code on GitHub ↗</a>
+      </div>
+    </article>
+
+    <article class="project" id="clinic-records">
+      <div class="proj-head">
+        <div class="proj-num">3.3</div>
+        <div class="proj-title-wrap">
+          <h3 class="proj-title">Clinic Records <span class="badge venture">Startup MVP</span></h3>
+          <div class="proj-meta"><b>Startup Project</b> — Oct 2026 · for small clinics in Pakistan and India</div>
+        </div>
+        <div class="proj-roles"><span>Django</span><span>Product</span><span>Healthcare</span></div>
+      </div>
+      <p class="proj-desc">Most small clinics in Pakistan and India keep patient history in paper files, so the doctor rarely sees it during a consultation and nobody tracks who missed a follow-up. Clinic Records is a web app that puts every visit, prescription and lab result in <strong>one searchable patient profile</strong>, and each morning prepares the WhatsApp reminders the front desk sends with <strong>one tap</strong>.</p>
+      <a class="proj-shot" href="https://github.com/Z3US-23/clinic-records" target="_blank" rel="noopener">
+        <img src="img/clinic-records-today.png" alt="Screenshot of Clinic Records with demo data: the doctor's Today page with appointment counts, patients asking for another time, the waiting room and WhatsApp reminders ready to send" loading="lazy">
+      </a>
+      <ul class="proj-points">
+        <li><strong>Patient history in seconds</strong>: search by name, phone or MR number from any screen. Each profile shows allergies in red, the latest vitals, the last prescription and a timeline of every visit and lab result.</li>
+        <li><strong>A follow-up engine</strong>: rules prepare appointment reminders, follow-up reminders and missed-check-up alerts in each clinic's own timezone. Patients confirm or ask for another time from a private link, with no app to install.</li>
+        <li><strong>Built for real patient data</strong>: every clinic's records are isolated, receptionists never see clinical notes, an audit log records who viewed what, and lab reports are only served to signed-in doctors.</li>
+        <li><strong>Fits how local clinics work</strong>: temperature in °F or °C, prescriptions printed on A4 or A5 letterhead, walk-ins with token numbers, Pakistani and Indian mobile numbers (even typed in Urdu digits), and CSV import to move paper records in.</li>
+        <li><strong>893 automated tests</strong>, including checks that one clinic can never open another clinic's patients.</li>
+      </ul>
+      <div class="stat-strip">
+        <div class="stat"><div class="stat-value">893</div><div class="stat-label">automated tests, all passing</div></div>
+        <div class="stat"><div class="stat-value">3</div><div class="stat-label">staff roles with separate access</div></div>
+        <div class="stat"><div class="stat-value">3</div><div class="stat-label">kinds of reminder prepared automatically</div></div>
+        <div class="stat"><div class="stat-value">0</div><div class="stat-label">per-message fees for WhatsApp reminders</div></div>
+      </div>
+      <div class="stack-tags">
+        <span>Python</span><span>Django 5.2</span><span>Django ORM</span><span>SQLite</span><span>HTML &amp; CSS</span><span>JavaScript</span><span>PWA</span><span>WhatsApp links</span><span>Git</span>
+      </div>
+      <div class="contact-links proj-links">
+        <a class="primary" href="https://github.com/Z3US-23/clinic-records" target="_blank" rel="noopener">Code on GitHub ↗</a>
       </div>
     </article>
   </div>
